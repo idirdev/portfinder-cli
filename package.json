@@ -1,0 +1,32 @@
+{
+  "name": "@idirdev/portfinder-cli",
+  "version": "1.0.0",
+  "description": "A powerful CLI tool to check, scan, find available ports and kill processes occupying them",
+  "author": "idirdev",
+  "license": "MIT",
+  "bin": {
+    "portfinder": "./dist/index.js"
+  },
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "dev": "ts-node src/index.ts",
+    "start": "node dist/index.js",
+    "clean": "rm -rf dist",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": ["port", "scanner", "cli", "network", "kill", "process"],
+  "dependencies": {
+    "chalk": "^4.1.2",
+    "commander": "^12.1.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.14.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.5.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
