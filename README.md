@@ -58,3 +58,32 @@ portfinder kill 4000 --yes
 ## License
 
 MIT
+
+---
+
+## 🇫🇷 Documentation en français
+
+### Description
+PortFinder CLI est un outil en ligne de commande puissant pour la découverte et la gestion des ports réseau. Il permet de vérifier la disponibilité d'un port, de scanner des plages de ports, de trouver des ports libres et de terminer les processus qui les occupent.
+
+### Installation
+```bash
+npm install -g @idirdev/portfinder-cli
+```
+
+### Utilisation
+```bash
+# Vérifier un port
+portfinder check 3000
+
+# Scanner une plage de ports
+portfinder scan 3000-3100
+
+# Trouver des ports disponibles
+portfinder find 5
+
+# Libérer un port occupé
+portfinder kill 3000
+```
+
+Consultez la documentation anglaise ci-dessus pour la liste complète des options et drapeaux disponibles.
