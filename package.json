@@ -18,5 +18,9 @@
   },
   "bin": {
     "portfinder": "bin/cli.js"
+  },
+  "homepage": "https://github.com/idirdev/portfinder-cli",
+  "bugs": {
+    "url": "https://github.com/idirdev/portfinder-cli/issues"
   }
 }
